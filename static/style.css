@@ -1,0 +1,265 @@
+
+.main {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 120vh;
+}
+
+@keyframes quiet {
+  25% {
+    transform: scaleY(.6);
+  }
+
+  50% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(.8);
+  }
+}
+
+@keyframes normal {
+  25% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(.6);
+  }
+}
+
+@keyframes loud {
+  25% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(.4);
+  }
+
+  75% {
+    transform: scaleY(1.2);
+  }
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  --boxSize: 8px;
+  --gutter: 4px;
+  width: calc((var(--boxSize) + var(--gutter)) * 5);
+}
+
+.box {
+  transform: scaleY(.4);
+  height: 100%;
+  width: var(--boxSize);
+  background: #23e7cd;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  border-radius: 8px;
+  margin-top: 400px;
+}
+
+.box1 {
+  animation-name: quiet;
+}
+
+.box2 {
+  animation-name: normal;
+}
+
+.box3 {
+  animation-name: quiet;
+}
+
+.box4 {
+  animation-name: loud;
+}
+
+.box5 {
+  animation-name: quiet;
+}
+
+
+.button{
+    position:relative;
+    display:inline-block;
+    margin:20px;
+  }
+  
+  .startBtn button{
+    color:white;
+    font-family:Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:36px;
+    text-align: center;
+    text-decoration:none;
+    background-color:#FFA12B;
+    display:block;
+    position:relative;
+    padding:20px 40px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .startBtn button:active{
+    top:10px;
+    background-color:#F78900;
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  }
+  
+  .startBtn:after{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:4px;
+    position: absolute;
+    bottom:-15px;
+    left:-4px;
+    z-index:-1;
+    background-color:#2B1800;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+.table-main {
+    position: absolute;
+    z-index: 999;
+    width: 10% !important;
+    margin: 10px !important;
+    margin-top: 200px !important;
+    margin-left: 70px !important;
+}
+
+.table {
+    border: 2px solid;
+}
+
+.name {
+    margin-top: 250px !important;
+    position: absolute;
+}
+
+#submit {
+    height: 30px;
+    padding: 3px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid red;
+  }
+
+.title {
+    text-align: center;
+    position: absolute;
+}
+
+.row {
+    position: absolute;
+}
+
+
+#selectlan {
+    margin-top: 330px !important;
+    position: absolute;
+}
+
+.connection {
+    margin-top: 150px;
+    margin-right: 900px;
+    position: absolute;
+}
+
+#mal {
+    margin-top: 400px !important;
+    margin-right: 100px !important;
+}
+
+#odi {
+    margin-top: 400px !important;
+    margin-right: 100px !important;
+}
+
+#tel {
+    margin-top: 400px !important;
+    margin-right: 100px !important;
+}
+
+
+.malword {
+    margin-top: 200px !important;
+}
+
+.enword {
+    margin-top: 100px !important;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#randombutton {
+    position: absolute;
+    margin-top: 50px;
+}
+
+
+
+#odibt {
+    margin-right: -70px;
+}
+
+#malbt {
+    margin-right: -70px;
+}
+
+#telbt {
+    margin-left: 110px;
+}
+
+.winner {
+  font-family:Khula;
+  font-size:2.25em;
+  text-align:center;
+  height:100px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  margin-top: 225px !important;
+  left:10px;
+}
