@@ -3,8 +3,8 @@ from flask_socketio import SocketIO,send,emit
 import google.generativeai as genai
 from deep_translator import GoogleTranslator
 
-my_secret_1= "AIzaSyD3mhKNRU4lgf8Po3x7ZH86a76KNuiZQ1I"
-genai.configure(api_key=my_secret_1)
+google_api_key = os.environ.get("API_KEY")
+genai.configure(api_key=google_api_key)
 
 model = genai.GenerativeModel('gemini-pro')
 
